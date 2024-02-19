@@ -33,3 +33,12 @@ jobs:
 
     - name: Deploy with Gradle
       run: ./gradlew deploy
+
+    - name: Build and deploy with Gradle
+      run: ./gradlew build
+
+    - name: Set SHA variable
+      run: echo "SHA=${{ github.sha }}" >> $GITHUB_ENV
+
+    - name: Display Github Sha
+      run: echo $GITHUB_SHA
