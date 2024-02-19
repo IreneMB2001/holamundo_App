@@ -31,9 +31,6 @@ jobs:
         distribution: 'adopt'
         java-version: '17'
 
-    - name: Deploy with Gradle
-      run: ./gradlew deploy
-
     - name: Build and deploy with Gradle
       run: ./gradlew build
 
