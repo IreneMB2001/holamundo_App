@@ -23,7 +23,7 @@ jobs:
         aws-region: us-east-1
 
     - name: Gradlew permissions
-      run: chmod +x gradlew
+      run: chmod +x ./gradlew
 
     - name: Set up JDK 17
       uses: actions/setup-java@v4
