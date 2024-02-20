@@ -39,4 +39,3 @@ jobs:
 
     - name: Display Github Sha
       run: echo $GITHUB_SHA
-      
